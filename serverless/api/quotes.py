@@ -28,9 +28,9 @@ class handler(BaseHTTPRequestHandler):
         output += '<h1>Your Quotes</h1>'
         try:
             q_num = int(dic.get('q_num'))
-            for _ in range(q_num):
+            for i in range(q_num):
                 quote = data[get_random_number()]['text']
-                output += f'<p>{quote}</p>'
+                output += f'<p>{i+1}- {quote}</p>'
             self.wfile.write(output.encode())
 
         except:
