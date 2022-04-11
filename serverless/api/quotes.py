@@ -30,7 +30,7 @@ class handler(BaseHTTPRequestHandler):
             q_num = int(dic.get('q_num'))
             for i in range(q_num):
                 quote = data[get_random_number()]['text']
-                output += f'<p>{i}- {quote}</p>'.format(i, quote)
+                output += f'<p>{i+1}- {quote}</p>'.format(i, quote)
             self.wfile.write(output.encode())
 
         except:
