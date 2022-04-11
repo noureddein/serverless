@@ -4,7 +4,7 @@ import random
 from urllib import parse
 
 
-with open('../../data.json') as f:
+with open('data.json') as f:
     data = json.load(f)
 
 
