@@ -42,6 +42,7 @@ class handler(BaseHTTPRequestHandler):
 
 
 def main():
+    # main
     port = 8000
     server_address = ('localhost', port)
     server = HTTPServer(server_address, handler)
